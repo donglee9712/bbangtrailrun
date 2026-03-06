@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { AccordionItem } from "@/src/components/AccordionItem";
 import { notices } from "@/src/data/notices";
-import { ServicesSections } from "@/src/pages/Services";
+import { ServicesSections } from "@/src/views/Services";
 
 const Hero = () => (
   <header

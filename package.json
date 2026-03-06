@@ -7,7 +7,12 @@
     "build": "next build",
     "start": "next start -p 3000",
     "clean": "rm -rf .next",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "cf:build": "npm run build",
+    "cf:login": "npx wrangler login",
+    "cf:preview": "npx wrangler pages dev out",
+    "cf:deploy": "npx wrangler pages deploy out --project-name bbangtrailrun",
+    "cf:whoami": "npx wrangler whoami"
   },
   "dependencies": {
     "@google/genai": "^1.29.0",
